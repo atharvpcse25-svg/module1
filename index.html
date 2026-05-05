@@ -1,18 +1,19 @@
- <html>
+<html>
 <head>
     <title>School Alumni Portal</title>
- </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
   
     <header>
         <h1>Welcome to School Alumni Portal</h1>
-                <hr>
+        <hr>
     </header>
 
     
     <section>
         <h2>Alumni Registration</h2>
-        <form>
+        <form id="registrationForm">
             Name: <input type="text" name="name"><br><br>
             Email: <input type="email" name="email"><br><br>
             Graduation Year: <input type="number" name="year"><br><br>
@@ -42,12 +43,12 @@
     
     <section>
         <h2>Support Your School</h2>
-        <form>
+        <form id="donationForm">
             <p>Select Donation Amount:</p>
-            <input type="radio" name="amount"> ₹500<br>
-            <input type="radio" name="amount"> ₹1000<br>
-            <input type="radio" name="amount"> ₹5000<br>
-            <input type="radio" name="amount"> Custom: 
+            <input type="radio" name="amount" value="500"> ₹500<br>
+            <input type="radio" name="amount" value="1000"> ₹1000<br>
+            <input type="radio" name="amount" value="5000"> ₹5000<br>
+            <input type="radio" name="amount" value="custom"> Custom: 
             <input type="number" name="custom"><br><br>
             <input type="submit" value="Donate">
         </form>
@@ -69,6 +70,8 @@
         <hr>
         <p>&copy; 2026 School Alumni Portal</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
